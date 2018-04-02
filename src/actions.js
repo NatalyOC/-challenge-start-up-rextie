@@ -1,6 +1,7 @@
-export function convert(num){
+export const CONVERT_AMOUNT ='CONVERT_AMOUNT';
+export function convertAmount(num){
   return {
-    type:'CONVERT',
-    payload:num
-  }
+      type: CONVERT_AMOUNT,
+      payload: num
+  };
 }

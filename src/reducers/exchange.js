@@ -1,19 +1,21 @@
+import {CONVERT_AMOUNT} from '../actions';
 
-const state_Initials={
+const INITIAL_STATE={
   amount:0,
-  abc:0,
-};
+  abc:0
+}
 
 
-const Reducer=(state=state_Initials,action)=>{
+const Reducer=(state=INITIAL_STATE,action)=>{
   console.log(action)
-  const { payload } = action;
+  //const { payload } = action;
  console.log(action.type)
   switch (action.type){
-    case 'CONVERT':
+    case CONVERT_AMOUNT:
     return{
       ...state,
-      abc:action.payload,
+      amount:3,
+      abc:action.payload*2
     }
     
     default:
