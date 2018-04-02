@@ -34,8 +34,8 @@ const mapStateToProps = ({ state }) => ({
 
 
 const mapDispatchToProps = (dispatch) => ({
-  convert: () => {
-    dispatch({ type: 'CONVERT'})
+  convert: (num) => {
+    dispatch({ type: 'CONVERT',num})
   }
 });
 
