@@ -1,14 +1,26 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import '../App.css';
 
-const Exchange =({onValue})=>(
+const Exchange =({convert})=>(
   <div>
-    <input type="text" />
-    <input type="text" />
+    <input type="text"  onChange={(e)=>convert(e.target.value)} />
+    <input type="text" value={convert.amount_f} />
   </div>
 )
 
+const mapStateToProps = ({ state }) => ({
+  state,
+});
 
 
 
-export default Exchange;
+const mapDispatchToProps = (dispatch) => ({
+  convert: () => {
+    dispatch({ type: 'CONVERT'})
+  }
+});
+
+
+
+export default connect (mapStateToProps,mapDispatchToProps)(Exchange);
