@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Rate from './components/Rate';
-import Exchange from './containers/Exchange';
+import Main from './components/Main';
+
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Rate/>
-        <Exchange/>
+        <Main/>
       </div>
     );
   }

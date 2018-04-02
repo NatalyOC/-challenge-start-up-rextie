@@ -6,16 +6,18 @@ const state_Initials={
 
 
 const Reducer=(state=state_Initials,action)=>{
-  const { payload } = action;
+  console.log(action)
+  //const { payload } = action;
 
   switch (action.type){
     case 'CONVERT':
     return{
       ...state,
-      ...payload,
+      amount_f:action.payload
     }
+    break;
     default:
-    return state;
+        return state;
   }
 }
 

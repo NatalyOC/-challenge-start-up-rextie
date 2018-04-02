@@ -1,3 +1,6 @@
+*{
+  font-family: 'Nunito', sans-serif;
+}
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #444;
   line-height: 33px;
@@ -23,4 +26,22 @@ input.input-text, select, textarea, span.custom-select {
 
 .full-width {
   width: 100%!important;
+}
+.main-container{
+  border-radius: 10px;
+  border: 1px solid #A2A2A2;
+  padding: 5px;
+  margin: 15px;
+}
+.badge-greend{
+  background-color: #7ace3b;
+  color:#ffff;
+}
+.badge-blue{
+  background-color: #26A8E0;
+  color:#ffff;
+}
+
+.badge{
+  padding: 6px;
 }
