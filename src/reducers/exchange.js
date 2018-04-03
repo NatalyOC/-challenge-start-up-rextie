@@ -1,22 +1,22 @@
 import {CONVERT_AMOUNT} from '../actions';
 
 const INITIAL_STATE={
-  amount:0,
-  abc:0
+  amount_t:0,
+  amount_q:0
 }
 
 
 const Reducer=(state=INITIAL_STATE,action)=>{
-  console.log(action)
+  console.log(action.payload)
   //const { payload } = action;
- console.log(action.type)
+ //console.log(action.type)
   switch (action.type){
     case CONVERT_AMOUNT:
-    return{
+    return[
       ...state,
-      amount:3,
-      abc:action.payload*2
-    }
+      {amount_t:action.payload,
+        amount_q:action.payload*3.246}
+    ]
     
     default:
         return state;

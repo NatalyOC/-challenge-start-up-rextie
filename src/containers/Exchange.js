@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 //import {convert} from '../actions';
 import '../App.css';
+import { bindActionCreators } from 'redux';
+import * as todoActions from '../actions';
 
 const Exchange =({convert,valor})=>(
  /*  <div>
@@ -32,12 +34,11 @@ const mapStateToProps = ({ state }) => ({
 });
 
 
-
 const mapDispatchToProps = (dispatch) => ({
   convert: (num) => {
-    dispatch({ type: 'CONVERT',num})
+    dispatch({ type: 'CONVERT_AMOUNT', payload:num})
   }
-});
+}); 
 
 
 
