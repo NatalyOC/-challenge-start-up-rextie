@@ -5,7 +5,7 @@ import '../App.css';
 
 
 const MainDetails =()=>(
-<div className="row">  
+<div className="row main">  
   <div className="col-sm-12 col-md-6 offset-md-4 col-lg-4 offset-lg-3 text-center">
       <div className="main-container">
         <p>Cambio de Dólares Online</p>
