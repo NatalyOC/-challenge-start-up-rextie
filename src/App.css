@@ -1,6 +1,19 @@
 *{
   font-family: 'Nunito', sans-serif;
 }
+/*Header*/
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.nav-header{
+  width: 100%;
+}
+/*Main*/
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #444;
   line-height: 33px;
