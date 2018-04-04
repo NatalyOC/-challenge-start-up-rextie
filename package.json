@@ -5,6 +5,7 @@
   "homepage": "https://NatalyOC.github.io/challenge-start-up-rextie",
   "dependencies": {
     "firebase": "^4.12.1",
+    "npm": "^5.8.0",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-redux": "^5.0.7",

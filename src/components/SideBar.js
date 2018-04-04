@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const SideBar=()=>(
-  <nav className="col-md-4  sidebar">
+  <nav className="col-sm-12 col-md-4 col-lg-4  sidebar">
           <div className="sidebar-sticky">
             <ul className="nav flex-column">
               <li className="nav-item">
