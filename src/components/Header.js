@@ -9,7 +9,7 @@ const Header = () => (
       </a>
       <ul className="navbar-nav">
         <li className="nav-item active">
-          <button className="btn btn-outline-info my-2 my-sm-0" type="submit">LogOut</button>
+          <button className="btn btn-outline-info my-2 my-sm-0" type="submit">Salir</button>
         </li>
       </ul>
     </nav>

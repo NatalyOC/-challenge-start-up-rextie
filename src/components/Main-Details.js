@@ -5,16 +5,14 @@ import '../App.css';
 
 
 const MainDetails =()=>(
-<div className="row main">  
-  <div className="col-sm-12 col-md-6 offset-md-4 col-lg-4 offset-lg-3 text-center">
-      <div className="main-container">
+<main className="main col-sm-12 col-md-10 col-lg-10">  
+  <div className="main-container">
         <p>Cambio de Dólares Online</p>
         <p>Seguro, Rápido y al mejor Precio</p>
         <Rate/>
-      </div>      
-      <Exchange/>
-  </div>
-</div>
+  </div>      
+  <Exchange/>  
+</main>
 )
 
 export default MainDetails;

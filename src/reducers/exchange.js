@@ -1,6 +1,7 @@
 import {CONVERT_AMOUNT} from '../actions';
 
 const INITIAL_STATE={
+  operation:null,
   amount_t:0,
   amount_q:0
 }
